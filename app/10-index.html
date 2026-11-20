@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>GTA VI Trophy Tracker</h1>
+  <p id="progress">0 of 55 earned</p>
+</header>
+<div class="controls">
+  <label>Grade: <select id="gradeFilter"><option value="all">All</option><option value="bronze">Bronze</option><option value="silver">Silver</option><option value="gold">Gold</option><option value="platinum">Platinum</option></select></label>
+  <label><input type="checkbox" id="showSpoilers"> Show Spoilers</label>
+  <button id="viewRoadmap">View Roadmap</button>
+  <button id="export">Export</button>
+  <input type="file" id="import" accept="application/json">
+</div>
+<table id="trophyTable">
+  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>Guide</th></tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+<script type="module" src="app.js"></script>
+</body>
+</html>
